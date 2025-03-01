@@ -192,6 +192,10 @@
     <p>Welcome to my personal portfolio</p>
 </header>
 
+<div class="dark-mode-toggle">
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</div>
+
 <section>
     <h2>INTRODUCTION</h2>
     <p>Hello, my name is Rubagumya Alvin and I am a passionate student pursuing a Bachelor of Science in Computer Science. I enjoy playing soccer and I am always eager to grow both personally and professionally and learn new things.</p>
@@ -299,6 +303,45 @@
 <footer>
     <p>&copy; 2025 Rubagumya Alvin. All rights reserved.</p>
 </footer>
+<div class="dark-mode-toggle">
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</div>
+
+<style>
+    .dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .dark-mode header {
+        background-color: #444;
+    }
+
+    .dark-mode section {
+        background-color: #555;
+    }
+
+    .dark-mode footer {
+        background-color: #444;
+    }
+
+    .dark-mode table th {
+        background-color: #444;
+    }
+
+    .dark-mode a {
+        color: #fff;
+    }
+
+    .dark-mode button {
+        background-color: #555;
+    }
+</style>
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+</script>
 
 </body>
 </html>
